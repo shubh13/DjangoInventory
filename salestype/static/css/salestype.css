@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.logo-area{
+    position: absolute;
+    float: left;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: solid 1.5px black;
+    box-shadow: 2px 5px black;
+}
+
+.banner{
+    position: relative;
+    align-self: center;
+    left: 32%;
+    height: 100px;
+    width: 500px;
+    background-color: yellow;
+    border-radius: 30px;
+}
+
+.banner > h1{
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.menu-area {
+    position: absolute;
+    width: 850px;
+    top: 30%;
+    left: 20%;
+    border: solid 10px slategrey;
+    border-radius: 30px;
+    box-shadow: 5px 10px;
+}
+
+.menu-area > .device-area{
+    margin-top: 30px;
+    height: 125px;
+    margin-top: 5%;
+    margin-left: 65px;
+ }
+
+.menu-area > .subscription-area{
+    margin-bottom: none;
+    margin-left: 10%;
+}
+
+.device-area-only{
+    text-align: left;
+    float: left;
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: grey;
+    box-shadow: 2px 5px;
+}
+
+.device-and-subscription{
+    text-align: left;
+    float: left;
+    height: 50px;
+    width: 325px;
+    margin-left: 22%;
+    border-radius: 25px;
+    background-color: grey;
+    box-shadow: 2px 5px;
+}
+
+.device-area-only > a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 53px;
+    padding: 0px;
+}
+
+.device-and-subscription > a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 32px;
+}
+
+.menu-area > .subscription-area{
+    height: 150px;
+}
+
+.subscription-area-only{
+    float: left;
+    text-align: left;
+    margin-top: 0px;
+    height: 50px;
+    width: 250px;
+    margin-top: 10%;
+    border-radius: 30px;
+    background-color: grey;
+    box-shadow: 2px 5px;
+}
+
+.subscription-renewal{
+    float: left;
+    height: 50px;
+    width: 270px;
+    margin-left: 25%;
+    margin-top: 10%;
+    border-radius: 30px;
+    background-color: grey;
+    box-shadow: 2px 5px;
+}
+
+.subscription-area-only > a{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.subscription-renewal > a{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 13px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}

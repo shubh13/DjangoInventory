@@ -1,0 +1,194 @@
+body{
+    margin:0px;
+    padding:0px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.invoice-area{
+  margin-top: 0.5%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  top: 10px;
+  left: 2px;
+  height: 950px;
+  width: 816px;
+  border: solid 2px black;
+}
+
+.invoice-head{
+  height: 20px;
+  border-bottom: solid 1px black;
+}
+
+.invoice-head > h4{
+  margin-top: 2px;
+  text-align: center;
+}
+
+.invoice-banner{
+  height: 101px;
+  border-bottom: solid 1px black;
+}
+
+.logo-area{
+  position: absolute;
+  float: left;
+  width: auto;
+  margin-top: 0;
+}
+
+.invoice-banner > h3{
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.invoice-banner > #address{
+  font-size: 14px;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  margin-left: 125px;
+}
+
+.invoice-banner > #cin{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.invoice-banner > #gstin{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.main-section{
+  height: 645px;
+  width: auto;
+  border-bottom: solid 1px black;
+}
+
+.main-section > .invoice_head{
+    height: 100px;
+    border-bottom: solid 1px black;
+}
+
+.main-section > .invoice_head > .invoice_head_left{
+  width: 50%;
+  height: inherit;
+  border-right: solid 1px black;
+  float: left;
+}
+
+.main-section .invoice_head .invoice_head_right{
+  width: 50%;
+  height: inherit;
+  float: left;
+}
+
+.main-section > .invoice_head > .invoice_head_left > table, td, tr{
+  border-bottom: none;
+  text-align: center;
+  color: blue;
+  font-size: 16px;
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+
+.main-section .invoice_address{
+  width: inherit;
+  height: 100px;
+  border-bottom: solid 1px black;
+}
+
+.main-section .invoice_address .bill_to{
+  width: 50%;
+  height: inherit;
+  border-right: solid 1px black;
+}
+
+.main-section .invoice_address .supply{
+  width: 50%;
+  height: inherit;
+  float: left;
+}
+
+.main-section .invoice_content{
+  height: 300px;
+  border-bottom: solid 1px black;
+}
+
+.total-section{
+  height: 27px;
+  border-bottom: solid 1px black;
+}
+
+.total-section > p{
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sub-foot{
+  height: 115px;
+  border-bottom: solid 1px black;
+}
+
+.foot > p{
+  margin-top: 5.5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.sub-foot > .detail-area{
+  float: left;
+  width: 30%;
+  height: 115px;
+  border-right: solid 1px black;
+}
+
+.sub-foot > .signature{
+  float: left;
+  width: 30%;
+  height: 115px;
+  margin-left: 310px;
+  border-left: solid 1px black;
+}
+
+.detail-area > #amt-charge{
+  margin-top: 1px;
+  text-align: left;
+  font-size: 10px;
+}
+
+.detail-area > input{
+  border: none;
+  width: auto;
+}
+
+.detail-area > #note{
+  text-align: left;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.signature > #signature-head{
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.signature > #signature-foot{
+  text-align: center;
+  font-size: 10px;
+}

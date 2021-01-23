@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet"
+    href="{% static 'css/completeview.css' %}">
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Initial Inventory View</h1>
+    </div>
+    <div class="logo-area">
+      <a href="{% url 'menu' %}">
+        <img src="{% static '/logo.jpeg' %}" alt="">
+      </a>
+    </div>
+    <form class="view_area" action="/viewpage/"
+    method="post">
+      {% csrf_token %}
+      <table>
+        <tr>
+          <th colspan="2" style="background-color:lightgrey">
+            Product Id
+          </th>
+          <th colspan="2" style="background-color:lightgrey">
+            Device Serial
+          </th>
+          <th colspan="4" style="background-color:lightgrey">
+            Device Id
+          </th>
+          <th colspan="6" style="background-color:lightgrey">
+            Device Barcode
+          </th>
+          <th colspan="2" style="background-color:lightgrey">
+            Device Date
+          </th>
+          <th colspan="2" style="background-color:lightgrey">
+            Device HSN
+          </th>
+        </tr>
+        {% for items in display_items %}
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <input type="checkbox" name="item" value="{{items.device_id}}">
+            {{items.prod_id}}
+          </td>
+          <td colspan="2" style="text-align:center">
+            {{items.device_sl}}
+          </td>
+          <td colspan="4" style="text-align:center">
+            {{items.device_id}}
+          </td>
+          <td colspan="6" style="text-align:center">
+            {{items.device_bcode}}
+          </td>
+          <td colspan="2" style="text-align:center">
+            {{items.device_date}}
+          </td>
+          <td colspan="2" style="text-align:center">
+            {{items.device_hsn}}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <br>
+      <br>
+      <label for="total" id="total-label">
+        Total : {{total}}
+      </label>
+      <br>
+      <br>
+      <input type="submit" name="download" value="Download" id="download-btn">
+      <input type="submit" name="delete" value="Delete"
+      id="delete-btn">
+      <input type="submit" name="back" value="Back"
+      id="back-btn">
+    </form>
+  </body>
+</html>

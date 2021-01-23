@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.logo-area{
+    position: absolute;
+    float: left;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: solid 1.5px black;
+    box-shadow: 2px 5px black;
+}
+
+.banner{
+    position: relative;
+    align-self: center;
+    margin-top: 0.5%;
+    left: 25%;
+    height: 100px;
+    width: 700px;
+    border-radius: 30px;
+    border: solid 1px black;
+}
+
+.banner > h1{
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.form_container{
+    position: absolute;
+    background-color: white;
+    top: 170%;
+    left: 10%;
+    height: 350px;
+    width: 550px;
+    border: solid 2px black;
+    border-radius: 20px;
+    box-shadow: 5px 10px;
+}
+
+.form_container > .form_area{
+    position: relative;
+    top: 20%;
+    left: 15%;
+}
+
+.form_area > #submit-btn{
+    background-color: slategrey;
+    font-size: 20px;
+    border: none;
+    height: 30px;
+    width: auto;
+    color: white;
+    border-radius: 15px;
+}
+
+.form_area > #proceed-btn{
+    background-color: slategrey;
+    font-size: 20px;
+    border: none;
+    height: 30px;
+    width: auto;
+    color: white;
+    border-radius: 15px;
+}
+
+.form_area > #view-btn{
+    background-color: slategrey;
+    font-size: 20px;
+    border: none;
+    height: 30px;
+    width: auto;
+    color: white;
+    border-radius: 15px;
+}
+
+.form_area > label{
+    color: red;
+}
+
+.form_area > #yes-opt{
+    color: red;
+}
+
+.form_area > #no-opt{
+    color: red;
+}
+
+.form_area > input{
+    border: none;
+    border-bottom: solid 2px blue;
+    background-color: white;
+}

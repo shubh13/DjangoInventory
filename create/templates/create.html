@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Page</title>
+    <link rel="stylesheet" href="{% static 'create.css' %}">
+  </head>
+  <body>
+    <div class="logo-area">
+      <a href="{% url 'menu' %}">
+        <img src="{% static '/logo.jpeg' %}" alt="">
+      </a>
+    </div>
+    <div class="banner">
+      <h1>
+        Create Product Id
+      </h1>
+    </div>
+    <div class="form_container">
+      <form class="form_area" action="/create_new/" method="post">
+        {% csrf_token %}
+        <label for="prod_name">Product Name :</label>
+        <input type="text" name="prod_name" value=""
+        placeholder="Enter product name">
+        <br>
+        <br>
+        <label for="description">Description </label>
+        <br>
+        <br>
+        <textarea name="description" rows="8" cols="80"
+        placeholder="Write description"></textarea>
+        <br>
+        <br>
+        <label for="cprod_id">Create Product Id : </label>
+        <input type="text" name="cprod_id" value=""
+        placeholder="Create Product Id">
+        <br>
+        <br>
+        <label for="vendor">vendor name: </label>
+        <input type="text" name="vendor" value=""
+        placeholder="Enter vendor name">
+        <br>
+        <br>
+        <label for="">Invoice Number : </label>
+        <input type="text" name="invoice_number" value=""
+        placeholder="Enter invoice number">
+        <br>
+        <br>
+        <label for="">Quantity : </label>
+        <input type="text" name="quantity" value=""
+        placeholder="Enter the quantity">
+        <br>
+        <br>
+        <input type="submit" name="create_btn" value="Create" id="create_btn">
+      </form>
+    </div>
+  </body>
+</html>

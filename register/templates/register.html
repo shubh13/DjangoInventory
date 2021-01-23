@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css"
+        href="{% static '/css/reg.css' %}"/>
+    </head>
+    <body>
+        <div class="logo-area">
+				<img src="{% static '/logo.jpeg' %}" alt="">
+		</div>
+        <div class="banner">
+            <h1>Register page</h1>
+        </div>
+        <div class="form_container">
+            <form action="/add_register/"
+            method='post'
+            class="form_area">
+                {% csrf_token %}
+                <label for="emp_id">Employee Id:*</label>
+                <br>
+                <input type="text/number" value="" name="emp_id"
+                placeholder="Enter your Employee Id">
+                <br>
+                <br>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" value="" name="name"
+                placeholder="Enter your name">
+                <br>
+                <br>
+                <label for="email">Email address:</label>
+                <br>
+                <input type="email" value=""
+                name="email" placeholder="Enter your email">
+                <br>
+                <br>
+                <label for="phone">Phone Number: </label>
+                <br>
+                <input type="text/number" value="" name="phone"
+                placeholder="Enter your phone number">
+                <br>
+                <br>
+                <label for="password">
+                    Create a Password:
+                </label>
+                <br>
+                <input style="width:auto;"type="password"
+                name="password" value=""
+                placeholder="Create a password min. 8 characters">
+                <br>
+                <br>
+                <button name="register" id="register">
+                    Register
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

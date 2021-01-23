@@ -1,0 +1,89 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url("../back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: lighten;
+}
+
+.banner{
+    position: relative;
+    align-self: center;
+    top: 5px;
+    left: 22%;
+    height: 100px;
+    width: 700px;
+    /*border: solid 1px black;*/
+    border-radius: 30px;
+}
+
+.logo-area{
+  position: absolute;
+  float: left;
+  width: auto;
+  margin-top: 5px;
+  margin-left: 10px;
+  /*border: solid 1.2px black;*/
+  box-shadow: 2px 5px black;
+}
+
+.banner > h1{
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.form_container{
+    position: absolute;
+    /*background-color: white*/
+    top: 30%;
+    left: 30%;
+    height: 300px;
+    width: 500px;
+    border: solid 1.2px black;
+    border-radius: 20px;
+    box-shadow: 5px 10px lightgrey;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.form_area{
+    position:absolute;
+    top:20%;
+    left:25%;
+    border-radius:10px;
+    height:200px;
+    width:300px;
+}
+
+.form_area > .input-area > input{
+    border: none;
+    background-color: white;
+    border-bottom: solid 2px blue;
+}
+
+.input-area > label{
+    color: darkblue;
+}
+
+.form_area > #login-btn{
+    float: left;
+    background-color: slategrey;
+    height: 30px;
+    width: 110px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.form_area > .register-btn{
+    float: left;
+    background-color: slategrey;
+    margin-left: 10px;
+    height: 30px;
+    width: 110px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}

@@ -1,0 +1,12 @@
+asgiref==3.2.3
+Django==2.1
+django-atom==0.16.3
+django-formtools==2.2
+django-phone-field==1.8.0
+mysqlclient==1.4.6
+pkg-resources==0.0.0
+PyMySQL==0.9.3
+pytz==2019.3
+sqlparse==0.3.0
+urllib3==1.25.7
+XlsxWriter==1.2.7

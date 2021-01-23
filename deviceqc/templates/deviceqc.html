@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Device QC</title>
+    <link rel="stylesheet" type="text/css"
+    href="{% static '/css/main.css' %}"/>
+  </head>
+  {% if messages %}
+      {% for message in messages %}
+          {% if message.tags %}
+              <script type="text/javascript">
+                alert("{{message}}")
+              </script>
+          {% endif %}
+      {% endfor %}
+  {% endif %}
+  <body>
+    <div class="logo-area">
+      <a href="{% url 'menu' %}">
+        <img src="{% static '/logo.jpeg' %}" alt="">
+      </a>
+    </div>
+    <div class="banner">
+      <h1>
+        QC Determination and Final Stocking
+      </h1>
+    <div class="form_container">
+      <form  action="/test_device/ "class="form_area"
+      method="post">
+      {% csrf_token %}
+        <label for="prod_id">Product Id :*</label>
+        <input type="text" name="prod_id" value=""
+        placeholder="Enter Product Id">
+        <!--<select class="" name="prod_id">
+          {% for ids in toggle_ids %}
+          <option value="prod_id">{{ids.cprod_id}}</option>
+          {% endfor %}
+        </select>-->
+        <br>
+        <br>
+        <label for="device_id">Device Sl. No. :*</label>
+        <input type="text" name="device_id" value=""
+        placeholder="Enter Device Serial Number">
+        <br>
+        <br>
+        <label for="device_bcode">Device Barcode:</label>
+        <input type="text/number" name="device_bcode" value=""
+        placeholder="Device Barcode">
+        <br>
+        <br>
+        <label for="qc">QC Passed?</label>
+        <br>
+        <br>
+        <input type="radio" name="option" value="Yes"
+        id="yes-opt">Yes
+        <input type="radio" name="option" value="No"
+        id="no-opt" checked>No
+        <br>
+        <br>
+        <input type="submit" name="submit_test" value="Submit"
+        id="submit-btn">
+        <input type="submit" name="view_final" value="View"
+        id="view-btn">
+        <input type="submit" name="proceed" value="Proceed"
+        id="proceed-btn">
+      </form>
+    </div>
+  </body>
+</html>

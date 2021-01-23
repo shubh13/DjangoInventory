@@ -1,0 +1,137 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: auto;
+    background-color: white;
+}
+
+.logo-area{
+    position: absolute;
+    float: left;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: solid 1.5px black;
+    box-shadow: 2px 5px black;
+}
+
+.banner{
+    position: relative;
+    align-self: center;
+    top: 5px;
+    left: 25%;
+    height: 120px;
+    width: 700px;
+    border: solid 0.5px black;
+    border-radius: 30px;
+}
+
+.banner > h1{
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.form_container{
+  position: absolute;
+  height: 400px;
+  width: 95%;
+  top: 25%;
+  left: 30px;
+  border-radius: 20px;
+  border: solid 2px black;
+  box-shadow: 5px 5px grey;
+}
+
+.form_area > .deviceqc_yes{
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  overflow: scroll;
+}
+
+.deviceqc_yes > table, th, td, tr{
+  border: solid 2px black;
+  width: 950px;
+  border-collapse: collapse;
+}
+
+.deviceqc_yes > label{
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+.form_area > .deviceqc_no{
+  position: absolute;
+  top: 10px;
+  left: 55%;
+}
+
+.deviceqc_no > table, th, td, tr{
+  border: solid 2px black;
+  width: 950px;
+  border-collapse: collapse;
+}
+
+.deviceqc_no > label{
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+.form_area > #download_btn{
+    align-self: baseline;
+    margin-left: 35%;
+    margin-top: 25%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: inline-start;
+    height: 35px;
+    width: 140px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.form_area > #delete_btn{
+    align-self: baseline;
+    margin-left: 0.5%;
+    margin-top: 25%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: inline-start;
+    height: 35px;
+    width: 140px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.form_area > #back_btn{
+    align-self: baseline;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25%;
+    height: 35px;
+    width: 90px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.form_area > label{
+  position: absolute;
+  font-weight: bold;
+  font-size: 22px;
+  top:65%;
+  right: 40%;
+  float:left;
+}

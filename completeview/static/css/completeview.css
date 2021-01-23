@@ -1,0 +1,94 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: auto;
+    background-color: white;
+}
+
+.logo-area{
+    position: absolute;
+    float: left;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: solid 1.5px black;
+    box-shadow: 2px 5px black;
+}
+
+.banner{
+    position: relative;
+    float: left;
+    align-self: center;
+    top: 5px;
+    left: 30%;
+    height: 100px;
+    width: 550px;
+    border: solid 0.5px black;
+    border-radius: 30px;
+}
+
+.banner > h1{
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.view_area{
+  position: absolute;
+  height: auto;
+  width: auto;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+.view_area > table, th, td, tr{
+  border: solid 2px black;
+  width: 950px;
+  border-collapse: collapse;
+}
+
+.view_area > #total-label{
+  font-weight: bolder;
+  margin-left: 45%;
+}
+
+.view_area > #download-btn{
+    align-self: baseline;
+    margin-left: 30%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: inline-start;
+    height: 35px;
+    width: 140px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.view_area > #delete-btn{
+    align-self: baseline;
+    margin-left: 0.5%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: inline-start;
+    height: 35px;
+    width: 140px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.view_area > #back-btn{
+    align-self: baseline;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+    height: 35px;
+    width: 90px;
+    background-color: grey;
+    border-radius: 20px;
+}

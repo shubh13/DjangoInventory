@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    <link rel="stylesheet"
+    href="{% static '/css/invoice.css' %}">
+    <link rel="text/javascript"
+    href="{% static '/js/invoiceact.js' %}">
+  </head>
+  <body>
+    {% csrf_token %}
+    <div class="invoice-area">
+      <div class="invoice-head">
+        <h4>TAX INVOICE</h4>
+      </div>
+      <div class="invoice-banner">
+        <div class="logo-area">
+          <a href="{% url 'menu' %}">
+            <img src="{% static '/logo.jpeg' %}" alt="">
+          </a>
+	      </div>
+        <h3>Cognitive Framework India Pvt. Ltd.</h3>
+        <p id="address">Block B, Flat No. 1C, 344, MG Road, Kolkata, Kolkata, West Bengal 700104</p>
+        <p id="cin">CIN-U72900WB2018PTC228573</p>
+        <p id="gstin">GSTIN No : 19AAHCC8235D1ZN</p>
+      </div>
+      <div class="main-section">
+        <div class="invoice_head">
+          <div class="invoice_head_left">
+            <table>
+              <tr>
+                <td>UIN</td>
+                <td>
+                  <input type="text" name="uin" value="" style="border:none">
+                </td>
+              </tr>
+              <tr>
+                <td>PAN NO.</td>
+                <td>AAHCC8235D</td>
+              </tr>
+              <tr>
+                <td>GST NO.</td>
+                <td>19AAHCC8235D1ZN</td>
+              </tr>
+              <tr>
+                <td style="word-wrap:break-word">
+                  State & State Code
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="invoice_head_right">
+
+          </div>
+        </div>
+        <div class="invoice_address">
+          <div class="bill_to">
+            <div class="bill_to_head">
+
+            </div>
+          </div>
+          <div class="supply">
+            <div class="supply_head">
+
+            </div>
+          </div>
+        </div>
+        <div class="invoice_content">
+
+        </div>
+      </div>
+      <div class="total-section">
+        <p>Total</p>
+      </div>
+      <div class="sub-foot">
+        <div class="detail-area">
+          <p id="amt-charge">Amount Chargeable (in words)</p>
+          <input type="text" name="" value=""
+          placeholder="value entered">
+          <p id="note">Note-Please make cheques in favor of
+            "Cognitive Framework India Private Limited"</p>
+        </div>
+        <div class="signature">
+          <p id="signature-head">For Cognitive Framework
+            India Private Limited</p>
+          <p id="signature-foot">Authorised Signatory</p>
+        </div>
+      </div>
+      <div class="foot">
+        <p>Our Registered Office : Eden Tolly Signature ,
+          344 MG Road, Kolkata -700104, Telephone No-</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sales Type</title>
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'css/salestype.css' %}"/>
+  </head>
+  <body>
+    {% csrf_token %}
+    <div class="logo-area">
+      <a href="{% url 'menu' %}">
+        <img src="{% static '/logo.jpeg' %}" alt="">
+      </a>
+    </div>
+    <div class="banner">
+        <h1>Sales Type</h1>
+    </div>
+    <div class="menu-area">
+        <div class="device-area">
+            <div class="device-area-only">
+                <a href="{% url 'invoiceview' %}">Device Only</a>
+            </div>
+            <div class="device-and-subscription">
+                <a href="{% url 'invoiceview' %}">Device and Subscription</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="subscription-area">
+            <div class="subscription-area-only">
+                <a href="{% url 'invoiceview' %}">Subscription Only</a>
+            </div>
+            <div class="subscription-renewal">
+                <a href="{% url 'invoiceview' %}">Subscription Renewal</a>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

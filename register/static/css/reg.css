@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.logo-area{
+    position: absolute;
+    float: left;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: solid 1.5px black;
+    box-shadow: 2px 5px black;
+  }
+
+.banner > h1{
+    padding-top: 25px;
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.banner{
+    position: relative;
+    align-self: center;
+    left: 25%;
+    height: 100px;
+    width: 700px;
+    background-color: yellow;
+    border-radius: 30px;
+}
+
+.form_container{
+    position: absolute;
+    background-color: white;
+    top: 20%;
+    left: 32%;
+    height: 450px;
+    width: 500px;
+    border: solid 2px black;
+    border-radius: 20px;
+    box-shadow: 5px 10px;
+}
+
+.form_container > .form_area{
+    position: relative;
+    top: 10%;
+    left: 25%;
+}
+
+.form_area > label{
+    color: crimson;
+    margin-bottom: 2px;
+}
+
+.form_area > input{
+    width: auto;
+    border: none;
+    background-color: white;
+    border-bottom: solid 2px blue;
+}
+
+.form_area > button{
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: slategrey;
+}

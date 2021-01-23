@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cognitive Frameworks</title>
+		<link rel="stylesheet" type="text/css"
+		href="{% static '/css/login.css' %}"/>
+	</head>
+	{% if messages %}
+	    {% for message in messages %}
+	        {% if message.tags %}
+	            <script type="text/javascript">
+	            	alert("{{message}}")
+	            </script>
+	        {% endif %}
+	    {% endfor %}
+	{% endif %}
+	<body>
+		<div class="logo-area">
+				<img src="{% static '/logo.jpeg' %}" alt="">
+		</div>
+		<div class="banner">
+			<h1>
+				Cognitive Framework Inventory
+			</h1>
+		</div>
+		<br>
+		<div class="form_container">
+			<form class="form_area" action="/new_login/"
+			method='post'>
+			{% csrf_token %}
+				<div class="input-area">
+					<label for="username">Username</label>
+					<br>
+					<input type='text' value='' name="sign_username"
+					placeholder="Enter the username">
+					<br>
+					<br>
+					<label for="password">Password</label>
+					<br>
+					<input type='password' value='' name="sign_password"
+					placeholder="Enter the password">
+				</div>
+				<br>
+				<br>
+				<input type="submit" value="login" name="login"
+				id="login-btn">
+				<input type="submit" name="register"
+				value="Register" class="register-btn">
+			</form>
+		</div>
+	</body>
+</html>

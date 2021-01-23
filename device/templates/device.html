@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Device Section</title>
+        <link rel="stylesheet" type="text/css"
+        href="{% static '/css/style.css' %}">
+    </head>
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags %}
+                <script type="text/javascript">
+                  alert("{{message}}")
+                </script>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    <body>
+        <div class="logo-area">
+          <a href="{% url 'menu' %}">
+            <img src="{% static '/logo.jpeg' %}" alt="">
+          </a>
+	      </div>
+        <div class="banner">
+            <h1>
+                Initial Inventory Stocking
+            </h1>
+        </div>
+        <div class="form_container">
+            <form action="/add_device/" method='post'
+                class="form_area">
+                {% csrf_token %}
+                <label for="prod-id">
+                  Prouct Id* :
+                </label>
+                <input type="text/number" name="prod_id" value=""
+                placeholder="Enter product id" id="drop">
+                <!--<select class="selection" name="device_select">
+                  <option value="1">Device Id1</option>
+                  <option value="2">Device Id 2</option>-->
+                </select>
+                <br>
+                <br>
+                <label for="device-sl">
+                    Device Sl. no. :
+                </label>
+                <input type="text/number" name="device_sl" value=""
+                placeholder="Enter device serial number"/>
+                <br>
+                <br>
+                <label for="device_id">
+                    Enter Device Id:
+                </label>
+                <input type="text/number" name="device_id"
+                placeholder="Enter device id"/>
+                <br>
+                <br>
+                <label for="device_bcode">
+                    Device Barcode:
+                </label>
+                <input type="number/text" name="device_bcode"
+                    placeholder="Device Barcode"/>
+                <br>
+                <br>
+                <label for="device_date">
+                  Date of purchase:
+                </label>
+                <input type="date" name="device_purchase"/>
+                <br>
+                <br>
+                <label for="device_hsn">
+                  HSN:
+                </label>
+                <input type="text/number" name="device_hsn"
+                placeholder="Device HSN code"/>
+                <br>
+                <br>
+                <input type="submit" name="add" value="Add"
+                id="add_btn"/>
+                <input type="submit" name="view"
+                value="View" id="view_btn">
+                <input type="submit" name="proceed" value="Proceed"
+                id="proceed_btn">
+              </form>
+          </div>
+          <div class="view_container">
+            <form class="view_area" action="/createitems/"
+            method="post">
+              {% csrf_token %}
+              <label for="prod_id">Product Id : </label>
+              <input type="text" name=""
+              value="{{new_create.cprod_id}}">
+              <br>
+              <br>
+              <label for="description">Description</label>
+              <textarea name="name" rows="6" cols="60">
+                {{new_create.description}}
+              </textarea>
+              <br>
+              <br>
+              <label for="qty">Quantity :</label>
+              <input type="text" name=""
+              value="{{new_create.quantity}}">
+              <br>
+              <br>
+              <label for="vendor">Vendor Name :</label>
+              <input type="text" name=""
+              value="{{new_create.vendor}}">
+              <br>
+              <br>
+              <label for="invoice_number">Invoice Number :</label>
+              <input type="text" name=""
+              value="{{new_create.invoice_number}}">
+            </form>
+          </div>
+    </body>
+</html>

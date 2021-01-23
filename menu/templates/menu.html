@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cognitive Menu</title>
+    <link rel="stylesheet" href="{% static '/css/menustyle.css' %}">
+  </head>
+  <body>
+    <div class="logo-area">
+				<img src="{% static '/logo.jpeg' %}" alt="">
+		</div>
+		<div class="banner">
+			<h1>
+				Main Menu
+			</h1>
+      <div class="menu_container">
+        <form class="form_area" action="/menu_response/" method="post">
+          {% csrf_token %}
+          <input type="submit" name="create" value="Create Product Id">
+          <input type="submit" name="device" value="Add Device">
+          <input type="submit" name="devicetest" value="Do Device QC">
+          <input type="submit" name="bill" value="Proceed For Billing">
+          <input type="submit" name="initial_stock" value="View Initial Stock">
+          <input type="submit" name="final_stock" value="View Final Stock">
+        </form>
+      </div>
+		</div>
+  </body>
+</html>
